@@ -1,12 +1,15 @@
 
-*{ 
-    background-color:#e6e6ff ;
+*{
     font-family: 'Caveat', cursive;
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
     margin-top: 20px;
 } 
+
+body{
+    background-color:#cdbdec;
+}
 
 .titulo{
     font-size:50px;
@@ -20,7 +23,8 @@
 .menu{
     display: flex;
     list-style-type: none;
-    font-size: x-large;
+    font-size: xx-large;
+    color:#800033 ;
 }
 
 ul{
@@ -41,11 +45,13 @@ a{
 .tamañoImg{
     width: 100%;
     text-align: center;
+
 }
 
 .contenedorFooter{
     display: flex;
     justify-content:space-evenly;
+    margin-top: 0%;
 }
 
 .copyright{
