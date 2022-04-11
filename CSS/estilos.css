@@ -8,7 +8,8 @@
 } 
 
 body{
-    background-color:#cdbdec;
+    /*background-color:#cdbdec;*/
+    background: linear-gradient(to bottom, #ffffcc 0%, #ffcccc 100%)
 }
 
 .titulo{
@@ -45,7 +46,12 @@ a{
 .tamañoImg{
     width: 100%;
     text-align: center;
+    filter: grayscale(100%);
+    transition: all 2s;
+}
 
+.tamañoImg:hover{
+    filter: none;
 }
 
 .contenedorFooter{
