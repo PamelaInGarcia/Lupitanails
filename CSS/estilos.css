@@ -13,19 +13,26 @@ body{
 }
 
 .titulo{
+    display: flex;
+    justify-content: center;
     font-size:50px;
     font-style: italic;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     color: #cc0066;
-    text-decoration:rgb(165, 161, 165) underline;
+    text-decoration: #9db4d4 underline;
 }
 
 .menu{
     display: flex;
     list-style-type: none;
-    font-size: xx-large;
-    color:#800033 ;
+    font-size: 35px;
+    margin-top: 2px;
+}
+
+.diam{
+    width: auto;
+    height: 45px;
 }
 
 ul{
@@ -36,6 +43,7 @@ ul{
 
 a{
     text-decoration:none;
+    color: #5f7799;
 }
 
 .imagenInicio{
@@ -46,12 +54,20 @@ a{
 .tamañoImg{
     width: 100%;
     text-align: center;
-    filter: grayscale(100%);
-    transition: all 2s;
 }
 
-.tamañoImg:hover{
+.img1-1{
+    width: 350px;
+    height: auto;
+}
+
+.hover:hover{
     filter: none;
+}
+
+.hover{
+    filter: grayscale(100%);
+    transition: all 2s;
 }
 
 .contenedorFooter{
@@ -82,6 +98,7 @@ a{
 .formul{
     text-align: center;
     font-size: 20px;
+    
 }
 
 #comentario{
@@ -127,10 +144,6 @@ a{
     align-content: center; /*vertical*/
 }
 
-.img1-1{
-    width: 350px;
-    height: auto;
-}
 
 @media screen and (min-width: 360px) and (max-width: 768px){
     .imgMedia{
@@ -155,5 +168,8 @@ a{
     .grid_footer{
         grid-area: footer;
     }
-    
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
